@@ -601,7 +601,7 @@ class PinchZoom extends Component<Props> {
 
     this._handlers.forEach(([eventName, fn, target]) => {
       // $FlowFixMe
-      (target || div).addEventListener(eventName, fn, true);
+      (target || div).addEventListener(eventName, fn);
     });
 
     // $FlowFixMe
